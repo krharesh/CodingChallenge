@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="36dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <ImageView
+                    android:layout_gravity="right|top"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/sc"
+                    android:text="Signup"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText
+                        android:background="@drawable/edittextbackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sc"
+                        android:textColor="@color/black"
+                        android:inputType="textCapWords"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/black"
+                        android:hint="Enter Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText
+                        android:background="@drawable/edittextbackground"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sc"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/black"
+                        android:textSize="20dp"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Password Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/mpassword"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edittextbackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/sc"
+                        android:hint="Enter Password"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/mrpassword"
+                        android:background="@drawable/edittextbackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sc"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/black"
+                        android:inputType="textPassword"
+                        android:hint="Re-enter password"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/qr"
+                    android:background="@drawable/btn_bgd"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:padding="12dp"
+                    android:id="@+id/btn"
+                    android:textColor="@color/black"
+                    android:text="Create Account"/>
+
+            </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:fabSize="normal"
+            android:src="@drawable/img"
+            app:backgroundTint="@color/black"
+            app:layout_anchor="@+id/cardView"
+            app:layout_anchorGravity="center|top"
+            android:scaleType="center"/>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
